@@ -1,0 +1,40 @@
+/* ===============================
+   Base Styles 
+================================ */
+
+* { 
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  font-family: 'Merriweather', serif;
+
+/* ===============================
+   Base Layout Styles 
+================================ */
+
+/* ---- Navigation ---- */
+
+
+
+
+/* ---- Containers ---- */
+
+
+
+
+/* ===============================
+   Media Queries 
+================================ */
+
+
+
+/* ---- Float clearfix ---- */
+
+
+
+

@@ -3,27 +3,151 @@
 ================================ */
 
 * { 
-    box-sizing: border-box;
+   box-sizing: border-box;
   }
 
-  ul {
-    list-style: none;
-    padding-left: 0;
+body {
+   margin: 0 auto;
+   font-family: 'Merriweather', serif;
+   background-color: #e8edf1;
+   color: #2E3032#2E3032;
+   font-size: 1em;
   }
 
-  font-family: 'Merriweather', serif;
+h1 {
+   background-color: #115794;
+   color: white;
+   text-transform: uppercase;
+   font-size: 1.6em;
+   margin: 0 0 40px 0;
+   padding: 30px;
+  }
+
+h2,
+legend {
+   font-size: 1.4em;
+   font-weight: bold;
+  }
+
+legend {
+   padding: 20px 0;
+}
+
+label,
+p {
+   color: #757a80;
+   line-height: 1.5;
+}
+
+input,
+textarea,
+select {
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+   padding: 15px;
+   font-family: 'Merriweather';
+   font-size: 1em;
+}
+
+input,
+select {
+   height: 50px;
+}
+
+.newsletter textarea {
+   resize: none;
+   height: 150px;
+}
+
+input::placeholder {
+   text-align: right;
+   font-style: italic;
+   padding: 10px;
+   color: #cbd0d4;
+}
+
+select:disabled {
+   color: #cbd0d4;
+}
+
+hr {
+   width: 95%;
+}
+
+.header-break {
+   border: 2px solid #2E3032;
+}
+
+.line-break {
+   border: 1px solid #2E3032;
+}
+
+button {
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   padding: 25px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   background-color: lightcoral;
+   font-size: 1.4em;
+   font-family: 'Merriweather';
+   width: 95%;
+}
+
+footer p {
+   text-align: center;
+   font-style: italic;
+   padding: 20px 0;
+}
 
 /* ===============================
-   Base Layout Styles 
+   Layout Styles 
 ================================ */
-
-/* ---- Navigation ---- */
-
-
-
 
 /* ---- Containers ---- */
 
+.main-header {
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 768px;
+}
+
+.contact-info,
+.newsletter {
+   border: none;
+   padding: 0 10px;
+   margin: 0;
+}
+
+.contact-info .flex-pair {
+   display: flex;
+   flex-direction: column;
+}
+
+.contact-info input,
+.contact-info select {
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+
+.label-option {
+   display: inline;
+}
+
+/*.newsletter input {
+   margin: 0 5px 10px 0;
+}*/
+
+#zip {
+   max-width: 50%;
+}
 
 
 
@@ -31,9 +155,17 @@
    Media Queries 
 ================================ */
 
+@media (min-width: 768px) {
 
+   .contact-info .flex-pair {
+      flex-direction: row;
+   }
 
-/* ---- Float clearfix ---- */
+   #zip {
+      max-width: 25%;
+   }
+
+}
 
 
 

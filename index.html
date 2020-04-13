@@ -22,22 +22,23 @@
                 <legend>Contact Information</legend>
 
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name">
+                <input required type="text" id="name" name="user_name" placeholder="Required">
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="user_email">
+                <input required type="email" id="email" name="user_email" placeholder="Required">
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone">
+                <input type="tel" id="phone" name="user_phone" placeholder="519-456-7918">
 
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address">
+                <input type="text" id="address" name="user_address" placeholder="123 My Avenue">
 
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+                <input type="text" id="city" name="user_city" placeholder="Portland">
 
                 <label>State</label>
                 <select id="state" name="user_state">
+                    <option value="" disabled selected>Choose State</option>
                     <option value="alaska">Alaska</option>
                     <option value="california">California</option>
                     <option value="hawaii">Hawaii</option>
@@ -58,17 +59,16 @@
                 <legend>Newsletter</legend>
 
                 <label>Select the newsletters you would like to receive</label>
-                <input type="checkbox" id="html-news" value="html_news" name="news_preference"><label for="html-news">HTML News</label>
+                <input type="checkbox" id="html-news" value="html_news" name="news_preference" checked><label for="html-news">HTML News</label>
                 <input type="checkbox" id="css-news" value="css_news" name="news_preference"><label for="css-news">CSS News</label>
                 <input type="checkbox" id="js-news" value="js_news" name="news_preference"><label for="js-news">Javascript News</label>
 
                 <label>Newsletter format</label>
-                <input type="radio" id="html" value="html" name="format"><label for="html">HTML</label>
+                <input type="radio" id="html" value="html" name="format" checked><label for="html">HTML</label>
                 <input type="radio" id="plain-text" value="plain_text" name="format"><label for="plain-text">Plain text</label>
 
                 <label for="interests">Other topics you'd like to hear about</label>
-                <textarea id="interests" name="user_interests">
-                </textarea>
+                <textarea id="interests" name="user_interests">For example, other languages, career advice, etc.</textarea>
             </fieldset>
 
             <button type="submit">Sign Up</button>

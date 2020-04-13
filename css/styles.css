@@ -67,8 +67,11 @@ input::placeholder {
    color: #cbd0d4;
 }
 
-select:disabled {
-   color: #cbd0d4;
+input:focus,
+select:focus,
+textarea:focus {
+   outline: 0;
+   border-bottom: 3px solid #115794;
 }
 
 hr {
@@ -85,8 +88,9 @@ hr {
 
 button {
    display: block;
-   margin: 0 auto;
+   margin: 20px auto;
    text-align: center;
+   cursor: pointer;
    padding: 25px;
    border: none;
    border-radius: 5px;
@@ -95,6 +99,11 @@ button {
    font-size: 1.4em;
    font-family: 'Merriweather';
    width: 95%;
+}
+
+button:hover {
+   background-color: #B34D4D;
+   transform: scale(0.9);
 }
 
 footer p {
@@ -132,18 +141,11 @@ footer p {
 }
 
 .contact-info input,
-.contact-info select {
+.contact-info select,
+textarea {
    margin-top: 15px;
    margin-bottom: 20px;
 }
-
-.label-option {
-   display: inline;
-}
-
-/*.newsletter input {
-   margin: 0 5px 10px 0;
-}*/
 
 #zip {
    max-width: 50%;

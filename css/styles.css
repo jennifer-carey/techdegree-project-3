@@ -79,6 +79,7 @@ select:focus,
 textarea:focus {
    outline: 0;
    border-bottom: 3px solid #115794;
+   transition: .3s;
 }
 
 hr {

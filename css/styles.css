@@ -40,6 +40,18 @@ p {
 }
 
 input,
+select {
+   height: 50px;
+}
+
+.newsletter textarea {
+   resize: none;
+   height: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
 textarea,
 select {
    border: none;
@@ -50,15 +62,12 @@ select {
    font-size: 1em;
 }
 
-input,
-select {
-   height: 50px;
+input[type="radio"],
+input[type="checkbox"] {
+   margin: 0 10px 0 5px;
 }
 
-.newsletter textarea {
-   resize: none;
-   height: 150px;
-}
+
 
 input::placeholder {
    text-align: right;
@@ -135,9 +144,24 @@ footer p {
    margin: 0;
 }
 
-.contact-info .flex-pair {
+.flex-pair,
+.flex-group {
    display: flex;
    flex-direction: column;
+}
+
+.flex-group .input-option {
+	display: flex;
+   flex-direction: row;
+}
+
+.label-option {
+   align-self: center;
+}
+
+.newsletter .flex-group,
+.newsletter .flex-pair {
+   margin-top: 20px;
 }
 
 .contact-info input,

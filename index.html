@@ -78,17 +78,23 @@
             <fieldset class="newsletter">
                 <legend>Newsletter</legend>
 
-                    <label>Select the newsletters you would like to receive</label>
-                    <input type="checkbox" id="html-news" value="html_news" name="news_preference" checked><label for="html-news" class="label-option">HTML News</label>
-                    <input type="checkbox" id="css-news" value="css_news" name="news_preference"><label for="css-news" class="label-option">CSS News</label>
-                    <input type="checkbox" id="js-news" value="js_news" name="news_preference"><label for="js-news" class="label-option">Javascript News</label>
+                    <div class="flex-group">
+                        <label>Select the newsletters you would like to receive</label>
+                        <div class="input-option"><input type="checkbox" id="html-news" value="html_news" name="news_preference" checked><label for="html-news" class="label-option">HTML News</label></div>
+                        <div class="input-option"><input type="checkbox" id="css-news" value="css_news" name="news_preference"><label for="css-news" class="label-option">CSS News</label></div>
+                        <div class="input-option"><input type="checkbox" id="js-news" value="js_news" name="news_preference"><label for="js-news" class="label-option">Javascript News</label></div>
+                    </div>
 
-                    <label>Newsletter format</label>
-                    <input type="radio" id="html" value="html" name="format" checked><label for="html" class="label-option">HTML</label>
-                    <input type="radio" id="plain-text" value="plain_text" name="format"><label for="plain-text" class="label-option">Plain text</label>
+                    <div class="flex-group">
+                        <label>Newsletter format</label>
+                        <div class="input-option"><input type="radio" id="html" value="html" name="format" checked><label for="html" class="label-option">HTML</label></div>
+                        <div class="input-option"><input type="radio" id="plain-text" value="plain_text" name="format"><label for="plain-text" class="label-option">Plain text</label></div>
+                    </div>
 
-                    <label for="interests">Other topics you'd like to hear about</label>
-                    <textarea id="interests" name="user_interests"></textarea>
+                    <div class="flex-pair">
+                        <label for="interests">Other topics you'd like to hear about</label>
+                        <textarea id="interests" name="user_interests"></textarea>
+                    </div>
             </fieldset>
 
             <button type="submit">Sign Up</button>
